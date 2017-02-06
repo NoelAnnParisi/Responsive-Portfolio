@@ -1,13 +1,15 @@
 html{
     min-height:100%;
+    min-width: 100%;
     margin:0;
     padding:0;
-    position: relative;
 }
 
 body{
+	min-width: 100%;
+	min-height: 100%;
 	background-image: url("images/background.png");
-	margin: 0 0 100px;
+	margin: 0 0;
 }
 
 a:link, a:visited, a:active { 
@@ -20,23 +22,19 @@ a:hover{
 }
 
 
-header{
+header {
 	height:80px;
+	width: auto;
 	background-color: white;
 	width: 100%;
-	position: absolute;
 	border-bottom: 3px solid #C0C0C0;
-	top:0;
 }
 
-footer{
-	position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 10%;
-    width: 100%;
+footer {
+    width: auto;
     background-color: #666666;
     border-top: 6px solid #4aaaa5;
+    /* position: relative; */
 }
 
 h1{
@@ -73,12 +71,12 @@ h2, h3{
 }
 
 ul{
-	padding-top: 13px;
+	padding-top: 37px;
 }
 
-section{
-	padding-top: 50px;
-}
+/*section{*/
+	/*padding-top: 50px;*/
+/*}*/
 
 nav{
 	text-align: right;
@@ -92,10 +90,11 @@ textarea{
     font-size: medium;
 }
 
-input{
+input {
 	width: 99%;
     height: 25px;
     font-size: medium;
+    border: 1px solid silver;
 }
 
 hr{
@@ -107,7 +106,7 @@ hr{
 .topofpage{
 	width:960px;
 	margin-left: 160px;
-	height:10%;
+	height:100%;
 }
 
 .boxednav{
@@ -123,11 +122,10 @@ hr{
 	box-sizing: border-box;
 	padding:20px;
 	background-color: #4aaaa5;
-	height:100%;
 	float:left;
 	text-align: center;
-	position:absolute;
 	top:0;
+	height:100%;
 }
 
 .left{
@@ -167,12 +165,13 @@ hr{
 	float:left;
 }
 
-.right > a:last-child > img {
-	float:right;
-}
+/*.right > a:last-child > img {*/
+	/*float:right;*/
+/*}*/
 
 .copyright {
-	margin-top: 37px;
+	padding-top: 10px;
+	padding-bottom: 10px;
     text-align: center;
     color: white;
     font-size: 12px;
@@ -183,6 +182,12 @@ hr{
 	margin: 110px 160px;
 	display:inline-block;
 	}
+
+.containerP {
+	width:960px; 
+	margin: 110px 160px;
+	display:inline-block;
+}
 
 .form{
 	display:inline-block;
@@ -212,11 +217,11 @@ hr{
 	background-color: white;
 }
 
-.formspecs > hr{
+.formspecs > hr {
 	height:3px;
 }
 
-.leftPortfolio{
+.leftPortfolio {
 	width:650px;
 	box-sizing: border-box;
 	padding:20px;
@@ -225,28 +230,29 @@ hr{
 	background-color: white;
 }
 
-.leftPortfolio > hr{
+.leftPortfolio > hr {
 	height:3px;
 }
 
-.image-left{
+.image-left {
 	height:250px;
 	width:275px;
 	float:left;
 	margin-bottom: 50px;
 }
 
-.image-right{
+.image-right {
 	height:250px;
 	width:275px;
 	float:right;
 	margin-bottom: 50px;
 }
-.img-resize{
+.img-resize {
 	height:250px;
 	width:275px;
 }
-.wordbox{
+
+.wordbox {
     bottom: -177px;
     background-color: #4aaaa5;
     box-sizing: border-box;
@@ -266,7 +272,7 @@ hr{
 	margin-bottom: 0;
 }
 
-#profile_pic{
+#profile_pic {
 	float: left;
     margin-right: 10px;
     margin-bottom: 2px;
@@ -274,10 +280,16 @@ hr{
     height: 270px;
 }
 
-@media screen and (max-width:980px) and (min-width: 768px) {	
+@media screen and (min-width:981px) {*/
+	body {*/
+		display:inline-block;
+	}
+}
+
+
+@media screen and (max-width:980px) {	
 
 	header {
-	    height: 10%;
 	    background-color: white;
 	    width: auto;
 	    position: fixed;
@@ -289,20 +301,18 @@ hr{
 	
 
 	.topofpage {
-		position:fixed;
+		height:100%;
 	}
 
-	footer {
-		position: absolute;
-	    left: 0;
-	    background-color: #666666;
-	    border-top: 6px solid #4aaaa5;
-	}
+	/*footer {*/
+	    /* width: 900%; */
+	    /*background-color: #666666;*/
+	    /*border-top: 6px solid #4aaaa5;*/
+	    /* right: 0; */
+	    /* left: 0; */
+	/*}*/
 
-	.container{
-		margin: 110px 160px;
-		display:inline-block;
-	}
+	/*}*/
 
 	#profile_pic {
 	    display:inline-block;
@@ -321,7 +331,7 @@ hr{
 	    background-color: white;
 	 }
 
-	.right{
+	.right {
 		float:right;
 		width: auto;
 		border: 1px solid #dddddd;
@@ -335,10 +345,26 @@ hr{
 	 	text-align: left;
 	 	line-height: 180%;
 	 }
+
+
+	 /*Now here are the portfolio rules*/
+	
+	.leftPortfolio {
+		width:auto;
+	}
+	
+
+	 .image-left {
+	 	float: none;
+	 }
+
+	 .image-right {
+	 	float:none;
+	 }
 }
 
 
-@media screen and (max-width: 768px) and (min-width: 640px){
+@media screen and (max-width: 768px) {
 
 	header {
 	    background-color: white;
@@ -351,20 +377,36 @@ hr{
 	   	width: auto;
 	   	position:static;
 	   	height: 100%;
-	    margin-left: 0;
+	    margin-left: 20px;
 	    margin-right: 20px;
    }
 
    .name {
-   		margin-left: 20px;
    		position:static;
    }
 
    ul {
-   	margin-top: 0;
+   		margin-top: 0;
    }
 
-	footer {
+   .container {
+	    width: auto;
+	    margin-left: 20px;
+	    margin-right: 20px;
+	    margin-top: 40px;
+	    margin-bottom: 0;
+	}
+
+	.containerP {
+	    width: auto;
+	    margin-left: 20px;
+	    margin-right: 20px;
+	    margin-top: 40px;
+	    margin-bottom: 0;
+	}
+
+
+	/**footer {
 	    position: absolute;
 	    left: 0;
 	    bottom: 0;
@@ -372,19 +414,12 @@ hr{
 	    width: 100%;
 	    background-color: #666666;
 	    border-top: 6px solid #4aaaa5;
-	}
+	}**/
 
 	section {
 		padding-top: 0;
 	}
 
-	.container {
-	    width: auto;
-	    margin-left: 20px;
-	    margin-right: 20px;
-	    margin-top: 40px;
-	    margin-bottom: 0;
-	}
 
 	.left {
 		width:100%;
@@ -400,6 +435,7 @@ hr{
 
 	.right {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.right > a:last-child > img {
@@ -420,21 +456,49 @@ hr{
 	 	line-height: 180%;
 	 }
 
-	
-}
+	 .copyright {
+		margin-top: 35px;
+	 }
 
+	/*these are rules for the portfolio page*/
+
+	.image-left {
+		float:left;
+	}
+
+	.image-right {
+		float:right;
+	}
+	
+	.leftPortfolio {
+		margin-bottom: 20px;
+	}
+
+	/*rules for contact page*/
+	.formspecs {
+	    margin-bottom: 20px;
+	}
+
+}
 
 @media screen and (max-width: 640px) {
 
 	header {
 	    background-color: white;
 	    position: static;
+	    clear:both;
+	    margin-bottom: 28px;
 	    border-bottom: 3px solid #C0C0C0;
+   }
+
+   footer {
+   	margin-top: 240px;
    }
 
 	nav {
 		text-align: center;
 		display: inline-block;
+		width: 100%;
 	}
 
 	section {
@@ -443,29 +507,30 @@ hr{
 
 	ul {
 		background: white;
-	    margin-top: 8%;
-	    padding: 10px;
+	    margin-top: 0;
+	    padding:10px;
+	    padding-left: 0;
+	    padding-right: 0;
 	    width: 100%;
-	    position:absolute;
+	    margin-top: 0;
 	    height: auto;
 	}
-
 	.name {
-		width:100%;
-		height:auto;
-		position:static;
-		margin-right: 0;
-		text-align: center;
+	    width: 100%;
+	    height: auto;
+	    margin-right: 0;
+	    text-align: center;
 	}
 
 	.topofpage {
 		margin-left: 0;
-		width: auto;
-		height:auto;
-		position:static;
+	    margin-right: 0;
+	    width: auto;
+	    height: auto;
+	    position: static;
 	}
 
-	footer {
+	/**footer {
 	    position: absolute;
 	    left: 0;
 	    bottom: 0;
@@ -473,12 +538,22 @@ hr{
 	    width: 100%;
 	    background-color: #666666;
 	    border-top: 6px solid #4aaaa5;
-	}
+	}**/
 
 	.container {
 		width:auto;
 		margin-bottom: 0;
-		margin-top: 20px;
+		margin-top: 80px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.containerP {
+		width:auto;
+		display:block;
+		margin-bottom: 0;
+		display: block;
+		margin-top:110px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
@@ -497,6 +572,7 @@ hr{
 
 	.right {
 		width: 100%;
+		margin-bottom: 10px;
 	}
 
 	.right > a:last-child > img {
@@ -508,5 +584,34 @@ hr{
 	 	display: inline-block;
 	 	line-height: 180%;
 	 }
+
+
+	 /*rules for portfolio page*/
+
+	.image-left {
+		float:none;
+	}
+
+	.image-right {
+		float:none;
+	}
+
+	.leftPortfolio {
+		width:auto;
+		float: none;
+	}
+
+	.li-1 {
+		float: left;
+   		margin-left: 50px;
+	}
+
+	.li-2 {
+		float:right;
+		margin-right: 50px;
+	}
+	
+	li:not(:first-child):before {
+    content: " ";
 
 }
