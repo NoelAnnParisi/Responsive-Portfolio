@@ -8,7 +8,7 @@ html{
 body{
 	min-width: 100%;
 	min-height: 100%;
-	background-image: url("images/background.png");
+	background-image: url("../images/background.png");
 	margin: 0 0;
 }
 
@@ -26,15 +26,14 @@ header {
 	height:80px;
 	width: auto;
 	background-color: white;
-	width: 100%;
 	border-bottom: 3px solid #C0C0C0;
 }
 
 footer {
-    width: auto;
+    min-width: 100%;
     background-color: #666666;
     border-top: 6px solid #4aaaa5;
-    /* position: relative; */
+    position: static; 
 }
 
 h1{
@@ -153,6 +152,19 @@ hr{
 .right > hr {
 	height:2px;
 }
+
+.rightP{
+	float:right;
+	width: 270px;
+	border: 1px solid #dddddd;
+	background-color: white;
+	box-sizing: border-box;
+    padding: 23px;
+}
+
+.rightP > hr {
+	height:2px;
+}
  
 
 .icon {
@@ -188,6 +200,12 @@ hr{
 	margin: 110px 160px;
 	display:inline-block;
 }
+
+.containerC {
+	width:960px; 
+	margin: 110px 160px;
+	display:inline-block;
+	}
 
 .form{
 	display:inline-block;
@@ -280,8 +298,8 @@ hr{
     height: 270px;
 }
 
-@media screen and (min-width:981px) {*/
-	body {*/
+@media screen and (min-width:981px) {
+	body {
 		display:inline-block;
 	}
 }
@@ -292,7 +310,6 @@ hr{
 	header {
 	    background-color: white;
 	    width: auto;
-	    position: fixed;
 	    border-bottom: 3px solid #C0C0C0;
 	    top: 0;
 	    right: 0;
@@ -302,6 +319,9 @@ hr{
 
 	.topofpage {
 		height:100%;
+		width:auto;
+		margin-right: 2%;
+   		margin-left: 2%;
 	}
 
 	/*footer {*/
@@ -314,6 +334,31 @@ hr{
 
 	/*}*/
 
+	.container {
+		width: auto;
+    	margin-right: 2%;
+    	margin-left: 2%;
+    	margin-bottom: 5%;
+    	margin-top: 5%;
+	}
+	
+	.containerP {
+		width:100%;
+    	margin-right: 2%;
+    	margin-left: 2%;
+    	margin-bottom: 5%;
+    	margin-top: 5%;
+	}
+
+	.containerC {
+		width: auto;
+	    margin-right: 2%;
+	    margin-left: 2%;
+	    margin-bottom: 5%;
+	    margin-top: 5%;
+	    display: block;
+	}
+
 	#profile_pic {
 	    display:inline-block;
 	    margin-bottom: 2px;
@@ -324,7 +369,7 @@ hr{
 	.left {
 	    box-sizing: border-box;
 	    padding: 20px;
-	    width: 70%;
+	    width: 60%;
 	    float: left;
 	    height: auto;
 	    border: 1px solid #dddddd;
@@ -340,6 +385,22 @@ hr{
 		box-sizing: border-box;
 	    padding: 23px;
 	}
+
+	.rightP {
+		float:right;
+		width: auto;
+		border: 1px solid #dddddd;
+		text-align: center;
+		background-color: white;
+		box-sizing: border-box;
+	    padding: 23px;
+	    margin-right: 4%;
+	}
+
+	.rightP > hr {
+		height:2px;
+	}
+
 
 	 p {
 	 	text-align: left;
@@ -361,7 +422,14 @@ hr{
 	 .image-right {
 	 	float:none;
 	 }
-}
+
+	/*rules for the contact page*/
+
+	.formspecs {
+		width:60%;
+	}
+
+	
 
 
 @media screen and (max-width: 768px) {
@@ -391,13 +459,18 @@ hr{
 
    .container {
 	    width: auto;
+	}
+
+	.containerP {
+	    width: auto;
 	    margin-left: 20px;
 	    margin-right: 20px;
 	    margin-top: 40px;
 	    margin-bottom: 0;
 	}
+	
 
-	.containerP {
+	.containerC {
 	    width: auto;
 	    margin-left: 20px;
 	    margin-right: 20px;
@@ -435,12 +508,24 @@ hr{
 
 	.right {
 		width: 100%;
-		margin-bottom: 10px;
+		margin-bottom: 10%;
 	}
 
 	.right > a:last-child > img {
 		float:left;
 	}
+
+	.rightP {
+		width: 100%;
+		margin-bottom: 10px;
+		margin-right: 0%;
+		text-align: left;
+	}
+
+	.rightP > a:last-child > img {
+		float:left;
+	}
+
 
 	.icon {
 		float:left;
@@ -477,6 +562,7 @@ hr{
 	/*rules for contact page*/
 	.formspecs {
 	    margin-bottom: 20px;
+	    width: 100%;
 	}
 
 }
@@ -491,10 +577,6 @@ hr{
 	    border-bottom: 3px solid #C0C0C0;
    }
 
-   footer {
-   	margin-top: 240px;
-   }
-
 	nav {
 		text-align: center;
 		display: inline-block;
@@ -503,6 +585,7 @@ hr{
 
 	section {
 		padding-top:0;
+		display: inline-block;
 	}
 
 	ul {
@@ -543,12 +626,19 @@ hr{
 	.container {
 		width:auto;
 		margin-bottom: 0;
-		margin-top: 80px;
+	}
+
+	.containerP {
+		width:auto;
+		display:block;
+		margin-bottom: 0;
+		display: block;
+		margin-top:110px;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
 
-	.containerP {
+	.containerC {
 		width:auto;
 		display:block;
 		margin-bottom: 0;
@@ -576,6 +666,15 @@ hr{
 	}
 
 	.right > a:last-child > img {
+    	float: left;
+    }
+
+    .rightP {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.rightP > a:last-child > img {
     	float: left;
     }
 
