@@ -104,7 +104,7 @@ hr{
 
 .topofpage{
 	width:960px;
-	margin-left: 160px;
+	margin: 0 auto; /*  this trick can be used to center elements horizontally */
 	height:100%;
 }
 
@@ -191,9 +191,11 @@ hr{
 
 .container{
 	width:960px; 
-	margin: 110px 160px;
-	display:inline-block;
-	}
+	margin: 50px auto; /* you want the right/left margins to be auto in order to keep this element centered */
+	display: block;    /* in order for the auto margin trick to work though, you need the element to be displayed as a block */
+	overflow: auto;    /* these last two lines */
+	clear: both;       /* are just for pushing the footer below the content */
+}
 
 .containerP {
 	width:960px; 
