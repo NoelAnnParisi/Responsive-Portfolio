@@ -341,11 +341,11 @@ hr{
 	    top: 0;
 	    right: 0;
 	    left: 0;
-	    position: fixed;
 	}
 
 	.contactfooter {
-
+	    height: 10%;
+	    display: inline-block;
 	}
 
 	.topofpage {
@@ -375,11 +375,12 @@ hr{
 	}
 	
 	.containerP {
-		width:100%;
-    	margin-right: 2%;
-    	margin-left: 2%;
-    	margin-bottom: 10%;
-    	margin-top: 12%;
+		width: auto;
+	    margin-right: 2%;
+	    margin-left: 2%;
+	    margin-bottom: 10%;
+	    margin-top: 5%;
+	    display: block;
 	}
 
 	.containerC {
@@ -444,6 +445,7 @@ hr{
 	
 	.leftPortfolio {
 		width:auto;
+		margin-bottom: 10%;
 	}
 	
 
@@ -472,9 +474,14 @@ hr{
 	    border-bottom: 3px solid #C0C0C0;
 	    top: 0;
    }
+
+   .headerportfolio {
+   		position: static;
+   }
 	
 	footer {
-		position: relative;
+		position: static;
+    	display: inline-block;
 	}
 
    .topofpage {
@@ -495,13 +502,14 @@ hr{
 
    .container {
 	    width: auto;
+	    margin-bottom: 0%;
 	}
 
 	.containerP {
 	    width: auto;
 	    margin-left: 20px;
 	    margin-right: 20px;
-	    margin-top: 15%;
+	    margin-top: 5%;
 	    margin-bottom: 0;
 	}
 	
@@ -602,7 +610,9 @@ hr{
 	}
 
 	.contactfooter {
-		position:fixed;
+	    position: static;
+	    height: 10%;
+	    display: inline-block;
 	}
 
 }
@@ -617,13 +627,14 @@ hr{
 	    border-bottom: 3px solid #C0C0C0;
    }
 
-   footer {
-   	position: relative;
+   .headerportfolio {
+   		position: static;
    }
 
-   .contactfooter {
+    footer {
+   		position: relative;
+    }
 
-   }
 
 	nav {
 		text-align: center;
@@ -672,8 +683,13 @@ hr{
 	}**/
 
 	.container {
-		width:auto;
-		margin-bottom: 0;
+		width: auto;
+	    display: block;
+	    margin-bottom: 4%;
+	    display: block;
+	    margin-top: 10%;
+	    margin-left: 20px;
+	    margin-right: 20px;
 	}
 
 	.containerP {
@@ -681,7 +697,7 @@ hr{
 		display:block;
 		margin-bottom: 4%;
 		display: block;
-		margin-top:20%;
+		margin-top: 10%;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
