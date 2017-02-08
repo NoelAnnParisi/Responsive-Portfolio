@@ -6,7 +6,7 @@ html{
 }
 
 body{
-	min-width: 100%;
+	min-width: 100vw;
 	min-height: 100vh;
 	background-image: url("../images/background.png");
 	margin: 0 0;
@@ -24,7 +24,14 @@ a:hover{
 
 header {
 	height:80px;
-	width: auto;
+	width: 100%;
+	background-color: white;
+	border-bottom: 3px solid #C0C0C0;
+}
+
+.headerportfolio {
+	height:80px;
+	width: 100%;
 	background-color: white;
 	border-bottom: 3px solid #C0C0C0;
 }
@@ -320,13 +327,22 @@ hr{
 
 	header {
 	    background-color: white;
-	    width: auto;
+	    width: 100%;
 	    border-bottom: 3px solid #C0C0C0;
 	    top: 0;
 	    right: 0;
 	    left: 0;
 	}
 	
+	.headerportfolio {
+		background-color: white;
+	    width: 100%;
+	    border-bottom: 3px solid #C0C0C0;
+	    top: 0;
+	    right: 0;
+	    left: 0;
+	    position: fixed;
+	}
 
 	.contactfooter {
 
@@ -355,14 +371,15 @@ hr{
     	margin-left: 2%;
     	margin-bottom: 5%;
     	margin-top: 5%;
+    	margin-bottom: 10%;
 	}
 	
 	.containerP {
 		width:100%;
     	margin-right: 2%;
     	margin-left: 2%;
-    	margin-bottom: 5%;
-    	margin-top: 5%;
+    	margin-bottom: 10%;
+    	margin-top: 12%;
 	}
 
 	.containerC {
@@ -484,7 +501,7 @@ hr{
 	    width: auto;
 	    margin-left: 20px;
 	    margin-right: 20px;
-	    margin-top: 40px;
+	    margin-top: 15%;
 	    margin-bottom: 0;
 	}
 	
@@ -662,9 +679,9 @@ hr{
 	.containerP {
 		width:auto;
 		display:block;
-		margin-bottom: 0;
+		margin-bottom: 4%;
 		display: block;
-		margin-top:110px;
+		margin-top:20%;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
@@ -674,7 +691,7 @@ hr{
 		display:block;
 		margin-bottom: 0;
 		display: block;
-		margin-top:110px;
+		margin-top:10%;
 		margin-left: 20px;
 		margin-right: 20px;
 	}
@@ -693,7 +710,7 @@ hr{
 
 	.right {
 		width: 100%;
-		margin-bottom: 10px;
+		margin-bottom: 20%;
 	}
 
 	.right > a:last-child > img {
