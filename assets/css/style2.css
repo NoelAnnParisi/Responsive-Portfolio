@@ -7,7 +7,7 @@ html{
 
 body{
 	min-width: 100%;
-	min-height: 100%;
+	min-height: 100vh;
 	background-image: url("../images/background.png");
 	margin: 0 0;
 }
@@ -33,7 +33,16 @@ footer {
     min-width: 100%;
     background-color: #666666;
     border-top: 6px solid #4aaaa5;
-    position: static; 
+    position: fixed;
+    bottom: 0;
+}
+
+.contactfooter {
+    min-width: 100%;
+    background-color: #666666;
+    border-top: 6px solid #4aaaa5;
+    position: fixed;
+    bottom: 0;
 }
 
 h1{
@@ -319,6 +328,10 @@ hr{
 	}
 	
 
+	.contactfooter {
+
+	}
+
 	.topofpage {
 		height:100%;
 		width:auto;
@@ -442,6 +455,10 @@ hr{
 	    border-bottom: 3px solid #C0C0C0;
 	    top: 0;
    }
+	
+	footer {
+		position: relative;
+	}
 
    .topofpage {
 	   	width: auto;
@@ -567,6 +584,10 @@ hr{
 	    width: 100%;
 	}
 
+	.contactfooter {
+		position:fixed;
+	}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -577,6 +598,14 @@ hr{
 	    clear:both;
 	    margin-bottom: 28px;
 	    border-bottom: 3px solid #C0C0C0;
+   }
+
+   footer {
+   	position: relative;
+   }
+
+   .contactfooter {
+
    }
 
 	nav {
